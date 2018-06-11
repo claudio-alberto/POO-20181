@@ -1,13 +1,5 @@
 import java.util.Scanner;
-        
-public class Lista1_01 {
-        public static void main(String[] args) {
-        Scanner Ler = new Scanner(System.in);
-        System.out.println("Digite a velocidade em M/s: ");
-        String velocidade = Ler.next();
-        transformaKm t1;
-        t1 = new transformaKm(); 
-    
+
     class transformaKm{
         private float velocidade;
         
@@ -22,7 +14,15 @@ public class Lista1_01 {
             return(conversao);
         }
     }
-    
-    
+public class Lista1_01 {
+        public static void main(String[] args) {
+        Scanner Ler = new Scanner(System.in);
+        System.out.println("Digite a velocidade em M/s: ");
+        float velocidade = Ler.nextFloat();
+        transformaKm t1;
+        t1 = new transformaKm();
+        t1.setVelocidade(velocidade);
+        t1.convert_metros(velocidade);
+     
 }
 }
